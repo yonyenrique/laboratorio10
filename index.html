@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+    <script>
+        let nombre="Yony llorente"
+        let valor=25000
+        let esEstudiante=true
+        console.log(`${nombre} es estudiante?: ${esEstudiante}` )
+        console.log(nombre, 'es estudiante?', esEstudiante)
+        document.write(`Buenos dias. El estudiante<b> ${nombre} </b> es estudiante?: ${esEstudiante}`)
+        document.write(`<br>Buenos dias. El estudiante<b> ${nombre} </b> es estudiante?: ${esEstudiante}`)
+        let x=10
+        x+=5
+        console.log("x:",x)
+        x-=5
+        console.log("x:",x)
+        x*=5
+        console.log("x:",x)
+        //Operadores de Comparacion
+        let y=20
+        console.log("y:",y)
+        console.log("x es igual a y",x==y)
+        console.log("x es diferente a y",x!=y)
+        console.log("x es mayor a y",x>y)
+        console.log("x es mayo o igual a y",x>=y)
+
+        let a=10
+        let b=8
+        let c=4
+        let d=2
+        console.log(a>b && c<d)
+        console.log(a>b && c>d)
+        console.log(a>b || c<d)
+        console.log(a>b || c!=d)
+        console.log(a>b && c<d)
+
+        //Condicionales
+        //programa que dice si un numero ingresado por el usuario es par negativo, impar negativo,par positivo o impar positivo
+        let numero=parseInt(prompt("ingrese un numero entero: "))
+        if (numero==0) 
+        {
+            console.log("el cero es par neutro")
+        }else if ((numero>0)&&(numero%2==0))
+        {
+            console.log(`el numero ${numero} es par positivo.`)
+        }else if ((numero>0)&&(numero%2!=0))
+        {
+            console.log(`el numero ${numero} es impar negativo.`)
+        }else if ((numero<0)&&(numero%2==0))
+        {
+            console.log(`el numero ${numero} es parnegativo.`)
+        
+        }else{
+            console.log(`el numero ${numero} es impar positivo.`)
+        }
+        //switch
+        let dia=parseInt(prompt(`Ingrese un numerodel 1 al 7:`))
+        switch(dia){
+            case 1:
+                console.log(`hoy es lunes`)
+                break
+            case 2:
+                console.log(`hoy es martes`)
+                break
+             case 3:
+                console.log(`hoy es miercoles`)
+                break
+             case 4:
+                console.log(`hoy es jueves`)
+                break
+            case 5:
+                console.log(`hoy es viernes`)
+                break
+             case 6:
+                console.log(`hoy es sabado`)
+                break
+            case 7:
+                console.log(`hoy es domingo`)
+                break
+             default:
+                console.log("ERROR !!!... SOLO NUMEROS DEL 1 AL 7")    
+
+        }
+        //CICLO WHILE
+        //CONTAR DE 1 A 10
+        let cont=1
+        while(cont<=10) {
+            console.log(cont)
+            cont=cont+1
+            //cont=cont+1
+            cont++
+        }
+        //PROGRAMA QUE CALCULE LA TABLA DE MULTIPLICAR DE UN NUMERO
+        n=7
+        i=1
+        while (i<=10){
+            console.log(`${n} x ${i} = ${(n*i)}`)
+            i++
+        }
+
+        //CICLO FOR
+        
+
+
+
+    </script>
+    
+</body>
+</html>
